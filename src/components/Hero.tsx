@@ -31,7 +31,7 @@ const Hero = () => {
               <img 
                 src={profileImage} 
                 alt="Kelvis Kiyimba Emmanuel" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
           </div>
