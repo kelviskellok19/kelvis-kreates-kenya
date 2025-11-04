@@ -27,11 +27,11 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           {/* Profile Image - Takes up half */}
           <div className="animate-fade-in">
-            <div className="w-full aspect-square max-w-lg mx-auto rounded-2xl overflow-hidden border-8 border-accent shadow-accent">
+            <div className="w-full max-w-lg mx-auto rounded-2xl overflow-hidden border-8 border-accent shadow-accent">
               <img 
                 src={profileImage} 
                 alt="Kelvis Kiyimba Emmanuel" 
-                className="w-full h-full object-cover object-top"
+                className="w-full h-auto object-cover"
               />
             </div>
           </div>
