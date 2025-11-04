@@ -24,31 +24,35 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <div className="mb-8">
-            <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-accent shadow-accent">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+          {/* Profile Image - Takes up half */}
+          <div className="animate-fade-in">
+            <div className="w-full aspect-square max-w-lg mx-auto rounded-2xl overflow-hidden border-8 border-accent shadow-accent">
               <img 
                 src={profileImage} 
                 alt="Kelvis Kiyimba Emmanuel" 
                 className="w-full h-full object-cover"
               />
             </div>
+          </div>
+
+          {/* Content - Takes up other half */}
+          <div className="text-center lg:text-left animate-slide-in-right">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4 font-['Playfair_Display']">
               Kelvis Kiyimba Emmanuel
             </h1>
-            <div className="h-1 w-24 bg-accent mx-auto mb-6 rounded-full"></div>
-          </div>
+            <div className="h-1 w-24 bg-accent mb-6 rounded-full mx-auto lg:mx-0"></div>
 
-          <p className="text-xl sm:text-2xl md:text-3xl text-primary-foreground/90 mb-6 font-medium">
-            Aspiring Entrepreneur | Business Enthusiast | Cultural Performer
-          </p>
+            <p className="text-xl sm:text-2xl md:text-3xl text-primary-foreground/90 mb-6 font-medium">
+              Aspiring Entrepreneur | Business Enthusiast | Cultural Performer
+            </p>
 
-          <p className="text-base sm:text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-            A motivated young professional from Kampala, Uganda, passionate about business operations, 
-            customer service, and financial management. Eager to make an impact through innovation and dedication.
-          </p>
+            <p className="text-base sm:text-lg text-primary-foreground/80 mb-8 leading-relaxed">
+              A motivated young professional from Kampala, Uganda, passionate about business operations, 
+              customer service, and financial management. Eager to make an impact through innovation and dedication.
+            </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
             <Button
               size="lg"
               onClick={scrollToContact}
@@ -67,19 +71,20 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-primary-foreground/80 text-sm">
-            <a href="tel:+256708406163" className="flex items-center gap-2 hover:text-accent transition-colors">
-              <Phone className="h-4 w-4" />
-              +256 (0) 708 406 163
-            </a>
-            <a href="mailto:kiyimbakelvis17@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
-              <Mail className="h-4 w-4" />
-              kiyimbakelvis17@gmail.com
-            </a>
-            <span className="flex items-center gap-2">
-              <MapPin className="h-4 w-4" />
-              Kampala, Uganda
-            </span>
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6 text-primary-foreground/80 text-sm">
+              <a href="tel:+256708406163" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <Phone className="h-4 w-4" />
+                +256 (0) 708 406 163
+              </a>
+              <a href="mailto:kiyimbakelvis17@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+                <Mail className="h-4 w-4" />
+                kiyimbakelvis17@gmail.com
+              </a>
+              <span className="flex items-center gap-2">
+                <MapPin className="h-4 w-4" />
+                Kampala, Uganda
+              </span>
+            </div>
           </div>
         </div>
       </div>
