@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profileImage from "@/assets/kelvis-profile.jpg";
 
 const Hero = () => {
   const handleDownloadCV = () => {
@@ -24,7 +25,14 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <div className="mb-6">
+          <div className="mb-8">
+            <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-accent shadow-accent">
+              <img 
+                src={profileImage} 
+                alt="Kelvis Kiyimba Emmanuel" 
+                className="w-full h-full object-cover"
+              />
+            </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4 font-['Playfair_Display']">
               Kelvis Kiyimba Emmanuel
             </h1>
